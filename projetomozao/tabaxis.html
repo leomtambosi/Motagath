@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabaxis</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    body{
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(90deg, #0868b2, #2563eb, #4f46e5);
+        grid-column: auto;
+    }
+    
+    
+    .cards {
+        display: flex;
+        text-align: center;
+        margin-left: 300px;
+        margin-top: 100px;
+    }
+    .cards2 {
+        display: flex;
+        text-align: center;
+        margin-left: 300px;
+        margin-bottom: 100px;
+    }
+    
+    .card {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        height: 300px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+        transition: 0.5s;
+        margin-left: 160px;
+    }
+    
+    
+    .card:hover {
+        height: 400px;
+    }
+    
+    .card .img-box {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        top: 0px;
+        transition: 0.5s;
+    }
+    
+    .card:hover .img-box {
+        top: -100px;
+        scale: 0.75;
+    }
+    
+    .card .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card .content {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        position: absolute;
+        top: 250px;
+        width: 100%;
+        padding: 0px 30px;
+        text-align: center;
+        height: 30px;
+        overflow: hidden;
+        transition: 0.5s;
+        font-size: 12.8px;
+    }
+    
+    .card:hover .content {
+        top: 130px;
+        height: 250px;
+    }
+    
+    ul {
+        list-style: none;
+        background-color: #222;
+        text-align: end;
+        }
+        ul li {
+        display: inline-block;
+        position: relative;
+        }
+        ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        }
+        ul li ul.dropdown li {
+        display: block;
+        background: #333;
+        margin: 2px 0px;
+        }
+        ul li ul.dropdown {
+        width:auto;
+        background: #ff0000;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        }
+        ul li a:hover {
+        background: #222;
+        }
+        ul li:hover ul.dropdown{
+        display: block;
+        }
+        .cardapio {
+            height: 30px;
+            width: 30;
+            margin-right: 55px;
+        }
+    
+        .section1 {
+            background-color: #f8ec67;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .section-titulo {
+            font-size: 2em;
+            margin: 0 0 20px;
+            color: #333;
+        }
+        
+        .section-paragrafo {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+    <header>
+        <ul>
+            <li>
+              <a href="#"><img class= cardapio src="img/cardapio.png" alt="tres"></a>
+              <ul class="dropdown">
+               <li><a href="#">Lino</a></li>
+               <li><a href="#">Adronus</a></li>
+              </ul>
+              </li>
+         </ul>
+    </header>
+    <section class="section1">
+        <h1 class="section-titulo">Altos Elfos</h1>
+        <p class="section-paragrafo">Filhos mais velhos de Anaxímenes com um Divino. Os Alto Elfos possuem uma beleza quase tão divina quanto a de sua Mãe, tem os cabelos compridos e lisos e nãos o cortam pois quanto mais comprido for mais velho e experiente é o Alto Elfo. Receberam como herança uma parte do poder de sua Mãe e por conta disso, ficam quase exclusivamente em templos e santuários de Anaximenes e de outros Divinos Reais como forma de agradecimento pelo vida e poderes a eles concedidos. </p>
+    </section>
+</body>
+</html>
